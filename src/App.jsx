@@ -48,7 +48,10 @@ export default function App() {
           <button
             onClick={toggleTheme}
             className="px-3 py-2 rounded-md border border-slate-400 dark:border-slate-500
-             hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-300"
+             bg-white dark:bg-slate-700 
+             text-slate-900 dark:text-white 
+             hover:bg-slate-100 dark:hover:bg-slate-600 
+             transition-all duration-300 shadow-md hover:shadow-lg font-medium"
           >
             {theme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
           </button>
