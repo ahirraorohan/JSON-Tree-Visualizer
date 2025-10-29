@@ -50,10 +50,17 @@ export default function JsonInput({ rawJson, setRawJson, onVisualize }) {
         >
           Visualize
         </button>
-        <button className="px-3 py-2 border rounded" onClick={handleSample}>
+        <button
+          //   onClick={onSampleJSON}
+          className="px-3 py-1 border rounded text-sm shadow-sm hover:shadow-md transition-colors duration-300
+             bg-gray-200 text-gray-900 hover:bg-gray-300 
+             dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600 
+             border-gray-300 dark:border-gray-600"
+        >
           Sample JSON
         </button>
-        <button className="px-3 py-2 border rounded" onClick={handleClear}>
+
+        <button className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 transition-colors">
           Clear
         </button>
       </div>

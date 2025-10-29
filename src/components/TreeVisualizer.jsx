@@ -160,10 +160,7 @@ export default function TreeVisualizer({ jsonData, theme }) {
               if (e.key === "Enter") handleSearch();
             }}
           />
-          <button
-            className="px-3 py-1 bg-indigo-600 text-white rounded text-sm"
-            onClick={handleSearch}
-          >
+          <button className="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 transition-colors">
             Search
           </button>
         </div>

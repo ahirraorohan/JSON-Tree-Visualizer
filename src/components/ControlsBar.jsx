@@ -10,22 +10,25 @@ export default function ControlsBar({
 }) {
   return (
     <div className="flex gap-2 items-center">
-      <button className="px-2 py-1 border rounded text-sm" onClick={onZoomIn}>
+      <button className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 transition-colors">
         Zoom In
       </button>
-      <button className="px-2 py-1 border rounded text-sm" onClick={onZoomOut}>
+      <button className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 transition-colors">
         Zoom Out
       </button>
-      <button className="px-2 py-1 border rounded text-sm" onClick={onFitView}>
+      <button className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 transition-colors">
         Fit View
       </button>
-      <button className="px-2 py-1 border rounded text-sm" onClick={onClear}>
+      <button className="px-3 py-1 rounded bg-gray-200 hover:bg-gray-300 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100 transition-colors">
         Clear
       </button>
       <button
-        className={`px-2 py-1 border rounded text-sm ${
-          copyMode ? "bg-indigo-600 text-white" : ""
-        }`}
+        className={`px-3 py-1 border rounded text-sm transition-colors duration-300
+    ${
+      copyMode
+        ? "bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-700"
+        : "bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600 border-gray-300 dark:border-gray-600"
+    }`}
         onClick={onCopyPathModeToggle}
       >
         {copyMode ? "Copy mode: ON" : "Copy path"}

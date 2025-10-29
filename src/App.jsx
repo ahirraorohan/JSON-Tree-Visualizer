@@ -33,7 +33,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-500 overflow-y-auto">
+    <div className="h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-500">
       <div className="max-w-6xl mx-auto p-4">
         <header className="flex items-center justify-between mb-4">
           <div>
@@ -63,7 +63,7 @@ export default function App() {
             />
           </div>
 
-          <div className="md:col-span-2 h-[80vh] md:h-[85vh] bg-white dark:bg-slate-800 shadow rounded p-2 flex flex-col">
+          <div className="md:col-span-2 h-[80vh] bg-white dark:bg-slate-800 shadow rounded p-2 flex flex-col transition-colors duration-500">
             <TreeVisualizer jsonData={treeData} theme={theme} />
           </div>
         </div>
